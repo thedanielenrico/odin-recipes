@@ -70,3 +70,9 @@ a {
     margin: auto 24px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+}

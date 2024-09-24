@@ -2,6 +2,11 @@ main {
   max-width: 760px;
   margin: auto;
 }
+main.is-transitioned {
+  animation: fade-in 1.5s forwards;
+  opacity: 0;
+  transform: translatey(50vh);
+}
 .text-section,
 .recipe-header {
   background-color: var(--secondary-bg-color);
@@ -33,4 +38,15 @@ ol {
 }
 ol > li {
   margin-bottom: var(--standard-margin-bottom);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translatey(50vh);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0);
+  }
 }
