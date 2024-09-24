@@ -35,6 +35,22 @@ a {
   font-size: 24px;
 }
 
-a:hover {
-  text-decoration: underline;
+.recipe-link {
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border: 2px solid black;
+  border-radius: 50px;
+  text-align: center;
+  background-color: #bae1ff;
+}
+
+.recipe-link:hover {
+  background-color: rgba(186, 225, 255, 0.95);
+  border-color: white;
+  a {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  transition: border-color 0.3s ease;
+  cursor: pointer;
 }
