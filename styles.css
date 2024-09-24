@@ -1,7 +1,17 @@
+:root {
+  --primary-bg-color: #cfeaff;
+  --secondary-bg-color: #bae1ff;
+  --secondary-bg-color-fade: rgba(186, 225, 255, 0.95);
+  --standardPadding: 16px;
+  --standard-border-radius: 16px;
+  --large-border-radius: 50px;
+  --standard-margin-bottom: 12px;
+}
+
 body {
   max-width: 900px;
   margin: auto;
-  background-color: #e4f3ff;
+  background-color: var(--primary-bg-color);
 }
 
 nav {
@@ -36,16 +46,16 @@ a {
 }
 
 .recipe-link {
-  margin-bottom: 8px;
+  margin-bottom: var(--standard-margin-bottom);
   padding: 8px 12px;
   border: 2px solid black;
-  border-radius: 50px;
+  border-radius: var(--large-border-radius);
   text-align: center;
-  background-color: #bae1ff;
+  background-color: var(--secondary-bg-color);
 }
 
 .recipe-link:hover {
-  background-color: rgba(186, 225, 255, 0.95);
+  background-color: var(--secondary-bg-color-fade);
   border-color: white;
   a {
     color: white;
