@@ -13,9 +13,9 @@ main.is-transitioned {
   margin: 48px auto;
   border-radius: var(--standard-border-radius);
   width: 100%;
-  padding: 8px 24px;
-  max-width: 580px;
+  padding: 8px 32px;
   box-sizing: border-box;
+  box-shadow: 2px 2px 10px #9a9b9c;
 }
 
 .recipe-header {
